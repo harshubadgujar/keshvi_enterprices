@@ -24,6 +24,11 @@ body {
 }
 
 [data-reveal] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-reveal].reveal-pending {
   opacity: 0;
   transform: translateY(26px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -323,6 +328,3 @@ body {
   text-shadow: 0 0 8px rgba(15, 23, 42, 0.16);
   animation: thinkingShimmer 4.8s linear infinite, thinkingGlowPulse 3.6s ease-in-out infinite;
 }
-
-
-
